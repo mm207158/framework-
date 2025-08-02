@@ -1,0 +1,25 @@
+section {
+  height: 150vh;
+}
+.images {
+  position: relative;
+  overflow: hidden;
+}
+
+.layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(122, 218, 165, 0.7); /* أفضل من لون ثابت */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: all 0.5s;
+}
+
+.images:hover .layer {
+  transform: translateY(0%);
+}
